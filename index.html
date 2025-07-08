@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Home Page</title>
+    <meta name="description" content="This is the home page for the WDD 231 course. It includes links to the Chamber Project and Final Project.">
+    <meta name="Author" content="Aaron Corrington">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <img src="images/city-logo.svg" alt="Site Logo" width="512" height="512">
+        <span>WDD 231 Course Website</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="main-nav" class="navigation">
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="page-title">Home</h1>
+        <section class="card-section">
+            <div class="card">
+                <h2>About Me</h2>
+                <p>ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus.</p>
+            </div>
+            <div class="card">
+                <h2>Student Photo</h2>
+                <img src="images/student-photo.jpg" alt="Student Photo" width="200" height="200">
+            </div>
+        </section>
+        <section class="certificate-section">
+            <h2>Web Certificate Courses</h2>
+            <div class="certificate-container">
+                <div class="certificate">
+                    <h3>All</h3>
+                </div>
+                <div class="certificate">
+                    <h3>CSE</h3>
+                </div>
+                <div class="certificate">
+                    <h3>WDD</h3>
+                </div>
+            </div>
+            <div class="course-container"></div>
+            <div class="credits-container hidden">The total credits for courses listed above is <span id="total-credits"></span></div>
+        </section>
+    </main>
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/acorrington/" target="_blank"><img src="images/linkedin.svg" alt="Linked In" width="16" height="16"></a>
+            <a href="https://github.com/acorrington/" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+            <a href="https://x.com/aaroncorrington/" target="_blank"><img src="images/twitter-x.svg" alt="Twitter" width="16" height="16"></a>
+        </div>
+        <p>&copy; <span id="current-year"> * Aaron Corrington * Oregon, USA</p>
+        <p>Last modification: <span id="last-updated"></span></p>
+    </footer>
+</body>
+</html>
