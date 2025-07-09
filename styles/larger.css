@@ -10,6 +10,7 @@
 
     header {
         grid-template-columns: 44px auto;
+        padding: 5px 0 5px 0;
     }
 
     .hamburger {
