@@ -138,24 +138,21 @@ footer p {
     color: var(--secondary-color);
 }
 
-/* Card styles */
-.card-section {
-    display: flex;    
-    flex-direction: row;
-    flex: 1;
+.main-section {
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 1rem;
-    margin: 1rem 0;
+    margin: 0 .5rem;
 }
 
+/* Card styles */
 .card {
     background-color: var(--background-color);
     border: solid 1px var(--secondary-color);
     border-radius: 4px;
     padding: .5rem;
-    /* margin: 0.5rem; */
-    min-width: 320px;
-    width: 100%;
+    margin: 0;
 }
 
 .card h2 {

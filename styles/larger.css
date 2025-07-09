@@ -1,20 +1,24 @@
 @media only screen and (min-width: 38rem) {
-    header, main, nav, footer {
+
+    header,
+    main,
+    nav,
+    footer {
         max-width: 900px;
-        margin: 0 auto 0 10px;
+        margin: 0 10px 0 10px;
     }
-    
+
     header {
         grid-template-columns: 44px auto;
     }
 
     .hamburger {
         display: none;
-    }    
+    }
 
     /* Navigation styles */
     .navigation {
-        display: block;   
+        display: block;
         border-bottom: solid 1px var(--secondary-color);
     }
 
@@ -22,19 +26,39 @@
         display: flex;
     }
 
+    /* Main Section Styles */
+    .main-section {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 1rem;
+    }
+
+    .main-section section:nth-child(1) {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .main-section section:nth-child(2) {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .main-section .certificate-section {
+        grid-column: 1 / -1;
+        grid-row: 2;
+    }
+
     /* card styles */
     .card {
-        flex-direction: column;
-        flex: 1;
-        /* margin: 0 0.5rem; */
-    }
-
-    .card:first-child {
-        margin-left: 0.5rem;
-    }
-
-    .card:last-child {
-        margin-right: 0.5rem;
+        background-color: var(--background-color);
+        border: solid 1px var(--secondary-color);
+        border-radius: 4px;
+        /* padding: .5rem;
+        margin: 0;
+        min-width: 0;
+        width: 100%;*/
+        height: 100%; 
     }
 
     .card h2 {
@@ -52,6 +76,12 @@
         border-radius: 4px;
     }
 
+    /* Certificate Styles */
+    .certificate-section {
+        margin: 0;
+    }
+
+
     /* Course Styles */
     .course-container {
         display: flex;
@@ -60,7 +90,7 @@
         gap: 1rem;
         width: 100%;
     }
-    
+
     .course {
         flex: 1 1 calc(33.333% - 0.67rem);
         max-width: calc(33.333% - 0.67rem);
