@@ -93,15 +93,17 @@ document.querySelectorAll('.certificate').forEach(item => {
         let courseContainer = document.querySelector('.course-container');
         courseContainer.innerHTML = ''; // Clear previous courses
 
-        let credits = 0;
         for (let course of filteredCourses) {
             courseContainer.innerHTML += `
                 <div class="course${course.completed ? ' completed' : ''}">
                     <h3>${course.subject} ${course.number}</h3>
                 </div>
             `;
-            credits += course.credits;
         }
+
+        const credits = filteredCourses.reduce((accumulator, currentValue) => {
+            return accumulator + currentValue.credits;
+        }, 0);
 
         document.querySelector('#total-credits').textContent = credits;
         document.querySelector('.credits-container').classList.remove('hidden');
