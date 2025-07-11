@@ -1,0 +1,64 @@
+:root {
+    --primary-color: #B9B9CC;
+    --text-color: #4E4E97;
+    --background-color: #DDDDDD;
+    --font-family: 'Carattere', sans-serif;
+    --font-size: 1rem;
+    --line-height: 1.5;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+header h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+main div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+    padding: 16px;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+main div section {
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+main div section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+main div section p {
+    margin: 4px 0;
+    text-align: center;
+}
+
+main div section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    padding: 16px;
+    background-color: var(--primary-color);
+}
