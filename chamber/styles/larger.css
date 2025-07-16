@@ -27,6 +27,13 @@
         display: flex;
     }
 
+    .navigation li.active a {
+        border-top: 0;
+        border-bottom: 0;
+        border-right: solid 1px var(--primary-color);
+        border-left: solid 1px var(--primary-color);
+    }
+
     /* Footer Styles*/
     footer {
         flex-direction: row;
@@ -36,7 +43,8 @@
     #directory-section.grid-view {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        gap: 1rem;   }
+        gap: 1rem;
+    }
 
     #directory-section.list-view .card {
         display: grid;
