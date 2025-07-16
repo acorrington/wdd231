@@ -1,0 +1,279 @@
+:root {
+    --primary-color: #1C355E;
+    --secondary-color: #F4F4F4;
+    --accent1-color: #628ccf;
+    --background-color: #FFFFFF;
+    --font-color: #333333;
+    --font-family: 'Montserrat Alternates', sans-serif;
+    --font-size: 1rem;
+    --line-height: 1.5;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    color: var(--font-color);
+    background-color: var(--background-color);
+}
+
+/* Header styles */
+header {
+    display: grid;
+    grid-template-columns: 44px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    column-gap: 8px;
+    background-color: var(--secondary-color);
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* Hamburger styles */
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";     
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/* Navigation styles */
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.navigation {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.navigation li.active a {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.navigation a:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* Footer styles */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+footer .social-links {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+footer .social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: solid 1px var(--background-color);
+    border-radius: 4px;
+}
+
+footer .social-links a:hover {
+    background-color: var(--accent1-color);
+    text-decoration: none;
+}
+
+footer .social-links img {
+    width: 24px;
+    height: 24px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.8rem; ;
+}
+
+footer div p a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+footer div p a:hover {
+    text-decoration: underline;
+}
+
+/* Page Styles */
+section .page-title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: var(--primary-color);
+}
+
+section .directory-links {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    column-gap: 6px;
+}
+
+section .directory-links button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: solid 1px var(--secondary-color);
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+section .directory-links button:hover {
+    background-color: var(--accent1-color);
+    text-decoration: none;
+}
+
+section .directory-links button.active {
+    background-color: var(--accent1-color);
+    text-decoration: none;
+}
+
+section .directory-links img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Directory Card Styles */
+#directory-section.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+#directory-section.list-view {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#directory-section .card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+    border: solid 1px var(--secondary-color);
+    border-radius: 4px;
+    padding: 1rem;
+    margin: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#directory-section.list-view .card {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 0.5rem;
+    box-shadow: none;
+    border: none;
+}
+
+#directory-section.list-view .card:nth-child(odd) {
+    background-color: var(--secondary-color);
+}
+
+#directory-section .card h2 {
+    font-size: 1.25rem;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    margin: 0 0 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#directory-section.list-view .card h2 {
+    font-size: 1rem;
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+#directory-section .card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    object-fit:contain;
+    width: 100%;
+    height: 150px;
+    padding-bottom: 1rem;
+}
+
+#directory-section.list-view .card img {
+    display: none;
+}
+
+#directory-section .card p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: var(--font-color);
+    margin: 0.25rem 0;
+}
+
+#directory-section.list-view .card p {
+    margin: 0.1rem 0;
+}
+
+#directory-section .card a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+#directory-section .card a:hover {
+    text-decoration: underline;
+}

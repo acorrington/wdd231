@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce Directory</title>
+    <meta name="description"
+        content="This is the home page for the Chamber of Commerce Directory. It includes links to local businesses and services.">
+    <meta name="author" content="Aaron Corrington">
+
+    <meta property="og:title" content="Chamber of Commerce Directory">
+    <meta property="og:description"
+        content="This is the home page for the Chamber of Commerce Directory. It includes links to local businesses and services.">
+    <meta property="og:url" content="https://acorrington.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://acorrington.github.io/wdd231/images/chamber/chamber-social.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="../favicon.ico">
+
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/footer-dates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/city-logo.svg" alt="Site Logo" width="512" height="512">
+        <span>Roseburg Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger" aria-label="Toggle Navigation"></button>
+    </header>
+    <nav id="main-nav" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h1 class="page-title">Directory</h1>
+            <div class="directory-links">
+                <button id="list-view"><img src="images/list-ul.svg" alt="List View" width="16" height="16"></button>
+                <button id="grid-view" class="active"><img src="images/grid-3x3-gap-fill.svg" alt="Grid View" width="16" height="16"></button>
+            </div>
+        </section>
+        <section id="directory-section" class="grid-view"></section>
+    </main>
+    <footer>
+        <div>
+            <p><strong>Roseburg Chamber of Commerce</strong></p>
+            <p>123 Main Street</p>
+            <p>Roseburg, OR 97470</p>
+            <p>Email: <a href="mailto:info@roseburgchamber.com">info@roseburgchamber.com</a></p>
+            <p>Phone: (541) 555-1234</p>    
+        </div>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/acorrington/" target="_blank"><img src="images/linkedin.svg"
+                    alt="Linked In" width="16" height="16"></a>
+            <a href="https://github.com/acorrington/" target="_blank"><img src="images/github.svg" alt="github" width="16"
+                    height="16"></a>
+            <a href="https://x.com/aaroncorrington/" target="_blank"><img src="images/twitter-x.svg" alt="Twitter"
+                    width="16" height="16"></a>
+        </div>
+        <div>
+            <p>WDD 231 Class Project</p>
+            <p>Aaron Corrington</p>
+            <p>&copy; <span id="current-year"></span> Roseburg Chamber of Commerce</p>
+            <p>Last modification: <span id="last-updated"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

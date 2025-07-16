@@ -1,0 +1,45 @@
+@media only screen and (min-width: 38rem) {
+
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 100%;
+        margin: 0 10px 0 10px;
+    }
+
+    header {
+        grid-template-columns: 44px auto;
+        padding: 5px 0 5px 0;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    /* Navigation styles */
+    .navigation {
+        display: block;
+        border-bottom: solid 1px var(--secondary-color);
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    /* Footer Styles*/
+    footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #directory-section.grid-view {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 1rem;   }
+
+    #directory-section.list-view .card {
+        display: grid;
+        grid-template-columns: 1fr 2fr .75fr 1fr;
+    }
+}

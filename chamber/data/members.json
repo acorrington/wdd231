@@ -1,0 +1,167 @@
+[
+    {
+        "name": "Douglas Tech Solutions",
+        "address": "1234 Harvard Ave, Roseburg, OR 97470",
+        "phone": "(541) 555-1234",
+        "website": "https://douglastechsolutions.com",
+        "image": "douglas_tech_logo.jpg",
+        "membership_level": 3,
+        "industry": "Technology",
+        "founded_year": 2015,
+        "employee_count": 200
+    },
+    {
+        "name": "Umpqua Green Energy",
+        "address": "5678 Diamond Lake Blvd, Roseburg, OR 97470",
+        "phone": "(541) 555-5678",
+        "website": "https://umpquagreenenergy.com",
+        "image": "umpqua_green_icon.jpg",
+        "membership_level": 2,
+        "industry": "Renewable Energy",
+        "founded_year": 2018,
+        "employee_count": 60
+    },
+    {
+        "name": "Roseburg Realty Group",
+        "address": "9012 Stewart Pkwy, Roseburg, OR 97471",
+        "phone": "(541) 555-9012",
+        "website": "https://roseburgrealty.com",
+        "image": "roseburg_realty_logo.jpg",
+        "membership_level": 1,
+        "industry": "Real Estate",
+        "founded_year": 2008,
+        "employee_count": 100
+    },
+    {
+        "name": "Cascade Health Systems",
+        "address": "3456 Garden Valley Rd, Roseburg, OR 97471",
+        "phone": "(541) 555-3456",
+        "website": "https://cascadehealthsystems.com",
+        "image": "cascade_health_icon.jpg",
+        "membership_level": 3,
+        "industry": "Healthcare",
+        "founded_year": 2010,
+        "employee_count": 250
+    },
+    {
+        "name": "Umpqua Education Center",
+        "address": "7890 NW Edenbower Blvd, Roseburg, OR 97471",
+        "phone": "(541) 555-7890",
+        "website": "https://umpquaeducation.com",
+        "image": "umpqua_edu_logo.jpg",
+        "membership_level": 2,
+        "industry": "Education",
+        "founded_year": 2012,
+        "employee_count": 45
+    },
+    {
+        "name": "SecurePath Cybersecurity",
+        "address": "2345 Douglas Hwy, Roseburg, OR 97470",
+        "phone": "(541) 555-2345",
+        "website": "https://securepathcyber.com",
+        "image": "securepath_icon.jpg",
+        "membership_level": 3,
+        "industry": "Cybersecurity",
+        "founded_year": 2016,
+        "employee_count": 150
+    },
+    {
+        "name": "Roseburg Logistics",
+        "address": "4567 Rifle Range Rd, Roseburg, OR 97470",
+        "phone": "(541) 555-4567",
+        "website": "https://roseburglogistics.com",
+        "image": "roseburg_logistics_logo.jpg",
+        "membership_level": 1,
+        "industry": "Logistics",
+        "founded_year": 2005,
+        "employee_count": 180
+    },
+    {
+        "name": "Timberline Consulting",
+        "address": "6789 Stephens St, Roseburg, OR 97470",
+        "phone": "(541) 555-6789",
+        "website": "https://timberlineconsulting.com",
+        "image": "timberline_icon.jpg",
+        "membership_level": 2,
+        "industry": "Consulting",
+        "founded_year": 2013,
+        "employee_count": 80
+    },
+    {
+        "name": "Umpqua Data Analytics",
+        "address": "1011 Oak Ave, Roseburg, OR 97470",
+        "phone": "(541) 555-1011",
+        "website": "https://umpquadata.com",
+        "image": "umpqua_data_logo.jpg",
+        "membership_level": 3,
+        "industry": "Data Analytics",
+        "founded_year": 2017,
+        "employee_count": 120
+    },
+    {
+        "name": "Evergreen Farms",
+        "address": "1213 Melrose Rd, Roseburg, OR 97471",
+        "phone": "(541) 555-1213",
+        "website": "https://evergreenfarms.com",
+        "image": "evergreen_farms_icon.jpg",
+        "membership_level": 1,
+        "industry": "Agriculture",
+        "founded_year": 2000,
+        "employee_count": 70
+    },
+    {
+        "name": "Roseburg Manufacturing",
+        "address": "1415 Coos Bay Hwy, Roseburg, OR 97471",
+        "phone": "(541) 555-1415",
+        "website": "https://roseburgmanufacturing.com",
+        "image": "roseburg_mfg_logo.jpg",
+        "membership_level": 2,
+        "industry": "Manufacturing",
+        "founded_year": 2014,
+        "employee_count": 200
+    },
+    {
+        "name": "ClearSpring Water Co.",
+        "address": "1617 Umpqua Hwy, Roseburg, OR 97470",
+        "phone": "(541) 555-1617",
+        "website": "https://clearspringwater.com",
+        "image": "clearspring_icon.jpg",
+        "membership_level": 3,
+        "industry": "Water Treatment",
+        "founded_year": 2019,
+        "employee_count": 50
+    },
+    {
+        "name": "Roseburg Retail Hub",
+        "address": "1819 Jackson St, Roseburg, OR 97470",
+        "phone": "(541) 555-1819",
+        "website": "https://roseburgretail.com",
+        "image": "roseburg_retail_logo.jpg",
+        "membership_level": 1,
+        "industry": "Retail",
+        "founded_year": 2007,
+        "employee_count": 250
+    },
+    {
+        "name": "CloudValley Software",
+        "address": "2021 Spruce St, Roseburg, OR 97470",
+        "phone": "(541) 555-2021",
+        "website": "https://cloudvalleysoftware.com",
+        "image": "cloudvalley_icon.jpg",
+        "membership_level": 2,
+        "industry": "Software Development",
+        "founded_year": 2015,
+        "employee_count": 100
+    },
+    {
+        "name": "Douglas Construction",
+        "address": "2223 Old Hwy 99 S, Roseburg, OR 97471",
+        "phone": "(541) 555-2223",
+        "website": "https://douglasconstruction.com",
+        "image": "douglas_construction_logo.jpg",
+        "membership_level": 1,
+        "industry": "Construction",
+        "founded_year": 2003,
+        "employee_count": 220
+    }
+]
