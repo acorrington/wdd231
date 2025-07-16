@@ -42,4 +42,12 @@
         display: grid;
         grid-template-columns: 1fr 2fr .75fr 1fr;
     }
+
+    #directory-section.list-view .card h2 {
+        text-align: left;
+    }
+
+    #directory-section.list-view .card p {
+        text-align: left;
+    }
 }
