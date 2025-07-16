@@ -1,7 +1,7 @@
 :root {
     --primary-color: #1C355E;
     --secondary-color: #F4F4F4;
-    --accent1-color: #628ccf;
+    --accent1-color: #99bdf3;
     --background-color: #FFFFFF;
     --font-color: #333333;
     --font-family: 'Montserrat Alternates', sans-serif;
@@ -86,14 +86,14 @@ header span {
 
 .navigation li.active a {
     background-color: var(--accent1-color);
-    color: var(--secondary-color);
+    color: var(--primary-color);
     border-right: solid 1px var(--primary-color);
     border-left: solid 1px var(--primary-color);
 }
 
 .navigation a:hover {
     background-color: var(--accent1-color);
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 /* Footer styles */
@@ -149,7 +149,7 @@ footer div p a:hover {
 }
 
 /* Page Styles */
-section .page-title {
+section h1.page-title {
     text-align: center;
     font-size: 1.5rem;
     margin: 1rem 0;
