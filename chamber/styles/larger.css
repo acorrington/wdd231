@@ -4,7 +4,7 @@
     main,
     nav,
     footer {
-        max-width: 100%;
+        max-width: 1000px;
         margin: 0 10px 0 10px;
     }
 
@@ -40,6 +40,7 @@
         justify-content: space-evenly;
     }
 
+    /* Directory Styles */
     #directory-section.grid-view {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -57,5 +58,10 @@
 
     #directory-section.list-view .card p {
         text-align: left;
+    }
+
+    /* Home Styles */
+    #home-section {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }

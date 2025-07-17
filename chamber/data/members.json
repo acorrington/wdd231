@@ -8,7 +8,9 @@
         "membership_level": 3,
         "industry": "Technology",
         "founded_year": 2015,
-        "employee_count": 200
+        "employee_count": 200,
+        "tagline": "Innovating Tomorrow's Technology",
+        "email": "info@douglastechsolutions.com"
     },
     {
         "name": "Umpqua Green Energy",
@@ -19,7 +21,9 @@
         "membership_level": 2,
         "industry": "Renewable Energy",
         "founded_year": 2018,
-        "employee_count": 60
+        "employee_count": 60,
+        "tagline": "Powering a Sustainable Future",
+        "email": "contact@umpquagreenenergy.com"
     },
     {
         "name": "Roseburg Realty Group",
@@ -30,7 +34,9 @@
         "membership_level": 1,
         "industry": "Real Estate",
         "founded_year": 2008,
-        "employee_count": 100
+        "employee_count": 100,
+        "tagline": "Your Home, Our Expertise",
+        "email": "info@roseburgrealty.com"
     },
     {
         "name": "Cascade Health Systems",
@@ -41,7 +47,9 @@
         "membership_level": 3,
         "industry": "Healthcare",
         "founded_year": 2010,
-        "employee_count": 250
+        "employee_count": 250,
+        "tagline": "Caring for Your Well-Being",
+        "email": "support@cascadehealthsystems.com"
     },
     {
         "name": "Umpqua Education Center",
@@ -52,7 +60,9 @@
         "membership_level": 2,
         "industry": "Education",
         "founded_year": 2012,
-        "employee_count": 45
+        "employee_count": 45,
+        "tagline": "Empowering Minds for Tomorrow",
+        "email": "info@umpquaeducation.com"
     },
     {
         "name": "SecurePath Cybersecurity",
@@ -63,7 +73,9 @@
         "membership_level": 3,
         "industry": "Cybersecurity",
         "founded_year": 2016,
-        "employee_count": 150
+        "employee_count": 150,
+        "tagline": "Protecting Your Digital World",
+        "email": "contact@securepathcyber.com"
     },
     {
         "name": "Roseburg Logistics",
@@ -74,7 +86,9 @@
         "membership_level": 1,
         "industry": "Logistics",
         "founded_year": 2005,
-        "employee_count": 180
+        "employee_count": 180,
+        "tagline": "Delivering Excellence Every Mile",
+        "email": "info@roseburglogistics.com"
     },
     {
         "name": "Timberline Consulting",
@@ -85,7 +99,9 @@
         "membership_level": 2,
         "industry": "Consulting",
         "founded_year": 2013,
-        "employee_count": 80
+        "employee_count": 80,
+        "tagline": "Guiding Your Business Success",
+        "email": "contact@timberlineconsulting.com"
     },
     {
         "name": "Umpqua Data Analytics",
@@ -96,7 +112,9 @@
         "membership_level": 3,
         "industry": "Data Analytics",
         "founded_year": 2017,
-        "employee_count": 120
+        "employee_count": 120,
+        "tagline": "Turning Data into Decisions",
+        "email": "info@umpquadata.com"
     },
     {
         "name": "Evergreen Farms",
@@ -107,7 +125,9 @@
         "membership_level": 1,
         "industry": "Agriculture",
         "founded_year": 2000,
-        "employee_count": 70
+        "employee_count": 70,
+        "tagline": "Growing Quality, Naturally",
+        "email": "contact@evergreenfarms.com"
     },
     {
         "name": "Roseburg Manufacturing",
@@ -118,7 +138,9 @@
         "membership_level": 2,
         "industry": "Manufacturing",
         "founded_year": 2014,
-        "employee_count": 200
+        "employee_count": 200,
+        "tagline": "Crafting Excellence Daily",
+        "email": "info@roseburgmanufacturing.com"
     },
     {
         "name": "ClearSpring Water Co.",
@@ -129,7 +151,9 @@
         "membership_level": 3,
         "industry": "Water Treatment",
         "founded_year": 2019,
-        "employee_count": 50
+        "employee_count": 50,
+        "tagline": "Pure Water, Pure Trust",
+        "email": "contact@clearspringwater.com"
     },
     {
         "name": "Roseburg Retail Hub",
@@ -140,7 +164,9 @@
         "membership_level": 1,
         "industry": "Retail",
         "founded_year": 2007,
-        "employee_count": 250
+        "employee_count": 250,
+        "tagline": "Shop Local, Thrive Local",
+        "email": "info@roseburgretail.com"
     },
     {
         "name": "CloudValley Software",
@@ -151,7 +177,9 @@
         "membership_level": 2,
         "industry": "Software Development",
         "founded_year": 2015,
-        "employee_count": 100
+        "employee_count": 100,
+        "tagline": "Building Your Digital Future",
+        "email": "contact@cloudvalleysoftware.com"
     },
     {
         "name": "Douglas Construction",
@@ -162,6 +190,8 @@
         "membership_level": 1,
         "industry": "Construction",
         "founded_year": 2003,
-        "employee_count": 220
+        "employee_count": 220,
+        "tagline": "Building Strong Foundations",
+        "email": "info@douglasconstruction.com"
     }
 ]

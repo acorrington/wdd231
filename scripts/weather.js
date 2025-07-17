@@ -24,7 +24,7 @@ async function apiFetch() {
 
 // Display the weather data in the HTML elements
 function displayResults(data) {
-    currentTemp.textContent = `${data.main.temp} &deg;F`;
+    currentTemp.textContent = `${data.main.temp} &#176; F`;
     weatherIcon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
     captionDesc.textContent = data.weather[0].description;
 }

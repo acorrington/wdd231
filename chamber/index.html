@@ -19,8 +19,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sansation:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
@@ -28,6 +27,9 @@
     <link rel="icon" href="../favicon.ico">
 
     <script src="scripts/main.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/forecast.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
     <script src="scripts/footer-dates.js" defer></script>
 </head>
 
@@ -47,7 +49,40 @@
     </nav>
     <main>
         <section>
+            <img src="images/chamber-hero.webp" alt="Roseburg Chamber of Commerce Hero" class="hero-image">
             <h1 class="page-title">Home</h1>
+        </section>
+        <section id="home-section">
+            <div class="card events">
+                <h2>Events</h2>
+                <p><span>7/25/2025</span> Annual Roseburg Music Festival</p>
+                <p><span>8/15/2025</span> Roseburg Art Walk</p>
+                <p><span>9/10/2025</span> Roseburg Harvest Festival</p>
+                <p><span>10/5/2025</span> Roseburg Business Expo</p>
+                <p><span>11/20/2025</span> Roseburg Holiday Parade</p>
+                <p><span>12/15/2025</span> Roseburg Winter Wonderland</p>
+            </div>
+            <div class="card weather">
+                <h2>Current Weather</h2>
+                <div id="weather-info">
+                    <img id="weather-icon" src="" alt="Weather Icon">
+                    <div>
+                        <p id="weather-temp"></p>
+                        <p id="weather-desc"></p>
+                        <p>High: <span id="weather-high"></span></p>
+                        <p>Low: <span id="weather-low"></span></p>
+                        <p>Humidity: <span id="weather-humidity"></span></p>
+                        <p>Sunrise: <span id="weather-sunrise"></span></p>
+                        <p>Sunset: <span id="weather-sunset"></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card forecast">
+                <h2>Weather Forecast</h2>
+                <p><span>Today</span>: <span id="forecast-today"></span></p>
+                <p><span id="forecast-tomorrow-day"></span>: <span id="forecast-tomorrow"></span></p>
+                <p><span id="forecast-day-after-tomorrow-day"></span>: <span id="forecast-day-after-tomorrow"></span></p>
+            </div>
         </section>
     </main>
     <footer>

@@ -1,10 +1,12 @@
 :root {
-    --primary-color: #1C355E;
+    /* --primary-color: #1C355E; */
+    /* --accent1-color: #99bdf3; */
+    --primary-color: #658320;
     --secondary-color: #F4F4F4;
-    --accent1-color: #99bdf3;
+    --accent1-color: #b5df93;
     --background-color: #FFFFFF;
     --font-color: #333333;
-    --font-family: 'Montserrat Alternates', sans-serif;
+    --font-family: 'Sansation', sans-serif;
     --font-size: 1rem;
     --line-height: 1.5;
 }
@@ -53,7 +55,7 @@ header span {
 }
 
 .hamburger::before {
-    content: "\2630";     
+    content: "\2630";
 }
 
 .hamburger.show::before {
@@ -104,7 +106,7 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    padding: 1rem 1rem;
+    padding: 1rem 0;
     background-color: var(--primary-color);
     color: var(--background-color);
 }
@@ -138,7 +140,7 @@ footer .social-links img {
 
 footer p {
     margin: 0;
-    font-size: 0.8rem; ;
+    font-size: 0.8rem;
 }
 
 footer div p a {
@@ -192,32 +194,64 @@ section .directory-links img {
     height: 24px;
 }
 
-/* Directory Card Styles */
+/* Card Styles */
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+    border: solid 1px var(--secondary-color);
+    border-radius: 4px;
+    margin: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.card h2 {
+    font-size: 1.25rem;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    margin: 0 0 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.card img {
+    height: auto;
+    border-radius: 4px;
+    object-fit: contain;
+    width: 200px;
+    padding-bottom: 1rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.card p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: var(--font-color);
+    margin: 0.25rem 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Directory Section */
 #directory-section {
     margin: 1rem 0;
 }
 
 #directory-section.grid-view {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 1rem;
+    margin: 1rem;
 }
 
 #directory-section.list-view {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-}
-
-#directory-section .card {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--background-color);
-    border: solid 1px var(--secondary-color);
-    border-radius: 4px;
-    padding: 1rem;
-    margin: 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #directory-section.list-view .card {
@@ -233,42 +267,14 @@ section .directory-links img {
     background-color: var(--secondary-color);
 }
 
-#directory-section .card h2 {
-    font-size: 1.25rem;
-    background-color: var(--primary-color);
-    color: var(--background-color);
-    margin: 0 0 0.5rem 0;
-    padding: 0.5rem;
-    border-radius: 4px;
-    text-align: center;
-}
-
 #directory-section.list-view .card h2 {
     font-size: 1rem;
     background-color: transparent;
     color: var(--primary-color);
 }
 
-#directory-section .card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
-    object-fit:contain;
-    width: 100%;
-    height: 150px;
-    padding-bottom: 1rem;
-}
-
 #directory-section.list-view .card img {
     display: none;
-}
-
-#directory-section .card p {
-    font-size: 0.9rem;
-    line-height: 1.4;
-    color: var(--font-color);
-    margin: 0.25rem 0;
-    text-align: center;
 }
 
 #directory-section.list-view .card p {
@@ -283,3 +289,111 @@ section .directory-links img {
 #directory-section .card a:hover {
     text-decoration: underline;
 }
+
+/* Home Styles */
+main section .hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#home-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+#home-section .card.events p {
+    text-align: left;
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+#home-section .card.events p:nth-child(odd) {
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+}
+
+/* Weather Styles */
+#home-section #weather-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#home-section #weather-info img {
+    flex: 0 0 100px;
+    width: 100px;
+    height: 100px;
+}
+
+#home-section #weather-info div {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#home-section #weather-info img {
+    width: 100px;
+    height: 100px;
+}
+
+#home-section #weather-info p {
+    text-align: left;
+    font-size: 1rem;;
+}
+
+/* Forecast Styles */
+#home-section .forecast {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#home-section .forecast p {
+    margin: 0.5rem 0;
+    font-size: 1rem;;
+}
+
+/* Spotlight Styles */
+#home-section .spotlight-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+    padding: .5rem;
+}
+
+#home-section .spotlight-details img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+    padding: 0;
+}
+
+#home-section .spotlight-details div {
+    flex-grow: 1;
+    align-items: center;
+}
+
+#home-section .spotlight-details p {
+    margin: 0;
+    font-size: 0.8rem;
+    text-align: left;
+}
+
+#home-section .spotlight-details p span {
+    text-transform: uppercase;
+}
+
