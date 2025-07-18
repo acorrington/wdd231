@@ -1,4 +1,4 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 58rem) {
 
     header,
     main,
@@ -43,13 +43,13 @@
     /* Directory Styles */
     #directory-section.grid-view {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 1rem;
     }
 
     #directory-section.list-view .card {
         display: grid;
-        grid-template-columns: 1fr 2fr .75fr 1fr;
+        grid-template-columns: 15rem 2fr 10rem 16rem;
     }
 
     #directory-section.list-view .card h2 {
@@ -64,5 +64,29 @@
     #home-section {
         grid-template-columns: 1fr 1fr 1fr;
         margin: 1rem 0;
+    }
+
+    /* Hero Section Styles */
+    .hero-overlay {
+        top: 43%;
+        padding: 2rem;
+        max-width: 300px;
+    }
+
+    .hero-overlay h1 {
+        font-size: 1.5rem;
+        margin: 0 0 1rem 0;
+        display: block;
+    }
+
+    .hero-overlay p {
+        font-size: 1.2rem;
+        margin: 0 0 1.5rem 0;
+        display: block;
+    }
+
+    .cta-button {
+        font-size: 1.1rem;
+        padding: 1rem 2rem;
     }
 }

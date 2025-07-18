@@ -1,10 +1,8 @@
 :root {
-    /* --primary-color: #1C355E; */
-    /* --accent1-color: #99bdf3; */
     --primary-color: #43552A;
     --secondary-color: #F4F4F4;
-    /* --accent1-color: #b5df93; */
     --accent1-color: #550000;
+    --accent2-color: #770000;
     --background-color: #FFFFFF;
     --font-color: #333333;
     --font-family: 'Roboto', sans-serif;
@@ -13,7 +11,11 @@
 }
 
 body {
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     padding: 0;
     font-family: var(--font-family);
     font-size: var(--font-size);
@@ -30,6 +32,7 @@ header {
     align-items: end;
     column-gap: 8px;
     background-color: var(--secondary-color);
+    width: 100%;
 }
 
 header .logo {
@@ -70,6 +73,7 @@ header span {
     display: none;
     background-color: var(--primary-color);
     color: var(--secondary-color);
+    width: 100%;
 }
 
 .navigation.show {
@@ -99,8 +103,13 @@ header span {
 }
 
 .navigation a:hover {
-    background-color: var(--accent1-color);
+    background-color: var(--accent2-color);
     color: var(--secondary-color);
+}
+
+main {
+    background-color: var(--secondary-color);
+    width: 100%;
 }
 
 /* Footer styles */
@@ -112,6 +121,7 @@ footer {
     padding: 1rem 0;
     background-color: var(--primary-color);
     color: var(--background-color);
+    width: 100%;
 }
 
 footer .social-links {
@@ -261,12 +271,12 @@ section .directory-links img {
     flex-direction: column;
     align-items: center;
     gap: 0;
-    padding: 0.5rem;
+    padding: 0;
     box-shadow: none;
     border: none;
 }
 
-#directory-section.list-view .card:nth-child(odd) {
+#directory-section.list-view .card:nth-child(even) {
     background-color: var(--secondary-color);
 }
 
@@ -281,7 +291,11 @@ section .directory-links img {
 }
 
 #directory-section.list-view .card p {
-    margin: 0.1rem 0;
+    padding: .5rem;
+}
+
+#directory-section.list-view .card p.tagline {
+    display: none;
 }
 
 #directory-section .card a {
@@ -352,7 +366,8 @@ main section .hero-image {
 
 #home-section #weather-info p {
     text-align: left;
-    font-size: 1rem;;
+    font-size: 1rem;
+    ;
 }
 
 /* Forecast Styles */
@@ -364,7 +379,8 @@ main section .hero-image {
 
 #home-section .forecast p {
     margin: 0.5rem 0;
-    font-size: 1rem;;
+    font-size: 1rem;
+    ;
 }
 
 /* Spotlight Styles */
@@ -405,3 +421,61 @@ main section .hero-image {
     text-decoration: underline;
 }
 
+/* Hero Section Styles */
+.hero-section {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+main section .hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--background-color);
+    background-color: rgba(67, 85, 42, 0.8);
+    padding: 1.5rem;
+    border-radius: 8px;
+    max-width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero-overlay h1 {
+    font-size: .75rem;
+    margin: 0 0 0.5rem 0;
+    font-weight: bold;
+    color: var(--background-color);
+    display: none;
+}
+
+.hero-overlay p {
+    font-size: .65rem;
+    margin: 0 0 1rem 0;
+    color: var(--background-color);
+    display: none;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent1-color);
+    color: var(--background-color);
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--accent2-color);
+    text-decoration: none;
+}
