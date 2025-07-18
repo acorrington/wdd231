@@ -11,7 +11,7 @@ getData().then(data => {
     // spotlight.innerHTML = ""; // Clear existing content
 
     // Get random members for spotlight where membership_level is 3
-    let level3Members = data.filter(member => member.membership_level === 3);
+    let level3Members = data.filter(member => member.membership_level >= 2);
 
     // Shuffle and pick up to 3 random members
     let randomMembers = level3Members
