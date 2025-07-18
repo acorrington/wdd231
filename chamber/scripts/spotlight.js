@@ -28,9 +28,9 @@ getData().then(data => {
             <div class="spotlight-details">
                 <img src="images/members/${member.image}" alt="${member.name}" class="member-image">
                 <div>
-                    <p><span>Email:</span> ${member.email}</p>
-                    <p><span>Phone:</span> ${member.phone}</p>
-                    <p><span>Url:</span> <a href="${member.website}" target="_blank">${member.website}</a></p>
+                    <p>${member.email}</p>
+                    <p>${member.phone}</p>
+                    <p><a href="${member.website}" target="_blank">${member.website}</a></p>
                 </div>
             </div>
         `;

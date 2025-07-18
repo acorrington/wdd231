@@ -63,5 +63,6 @@
     /* Home Styles */
     #home-section {
         grid-template-columns: 1fr 1fr 1fr;
+        margin: 1rem 0;
     }
 }

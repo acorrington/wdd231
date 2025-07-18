@@ -1,12 +1,13 @@
 :root {
     /* --primary-color: #1C355E; */
     /* --accent1-color: #99bdf3; */
-    --primary-color: #658320;
+    --primary-color: #43552A;
     --secondary-color: #F4F4F4;
-    --accent1-color: #b5df93;
+    /* --accent1-color: #b5df93; */
+    --accent1-color: #550000;
     --background-color: #FFFFFF;
     --font-color: #333333;
-    --font-family: 'Sansation', sans-serif;
+    --font-family: 'Roboto', sans-serif;
     --font-size: 1rem;
     --line-height: 1.5;
 }
@@ -31,11 +32,13 @@ header {
     background-color: var(--secondary-color);
 }
 
-header img {
+header .logo {
     display: block;
     width: 100%;
     height: auto;
     padding-bottom: 5px;
+    fill: var(--primary-color);
+    stroke: var(--primary-color);
 }
 
 header span {
@@ -88,7 +91,7 @@ header span {
 
 .navigation li.active a {
     background-color: var(--accent1-color);
-    color: var(--primary-color);
+    color: var(--secondary-color);
     border-right: 0;
     border-left: 0;
     border-top: solid 1px var(--primary-color);
@@ -97,7 +100,7 @@ header span {
 
 .navigation a:hover {
     background-color: var(--accent1-color);
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 /* Footer styles */
@@ -388,12 +391,17 @@ main section .hero-image {
 }
 
 #home-section .spotlight-details p {
-    margin: 0;
+    margin: 0.5rem 0;
     font-size: 0.8rem;
     text-align: left;
 }
 
-#home-section .spotlight-details p span {
-    text-transform: uppercase;
+#home-section .spotlight-details a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+#home-section .spotlight-details a:hover {
+    text-decoration: underline;
 }
 
