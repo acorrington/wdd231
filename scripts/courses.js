@@ -107,5 +107,34 @@ document.querySelectorAll('.certificate').forEach(item => {
 
         document.querySelector('#total-credits').textContent = credits;
         document.querySelector('.credits-container').classList.remove('hidden');
+
+        document.querySelectorAll('.course').forEach(item => {
+            item.addEventListener('click', (e) => {
+                const courseNumber = e.currentTarget.querySelector('h3').textContent.trim();
+                const course = courses.find(c => `${c.subject} ${c.number}` === courseNumber);
+                if (course) {
+                    displayCourseDetails(course);
+                }
+            });
+        });
     });
 });
+
+
+function displayCourseDetails(course) {
+    const dialog = document.querySelector('#course-details');
+    dialog.innerHTML = `
+        <h2>${course.subject} ${course.number}: ${course.title}</h2>
+        <p><strong>Credits:</strong> ${course.credits}</p>
+        <p><strong>Description:</strong> ${course.description}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p><strong>Technology:</strong> ${course.technology.join(', ')}</p>
+        <button onclick="closeDialog()">Close</button>
+    `;
+    dialog.showModal();
+}
+
+function closeDialog() {
+    const dialog = document.querySelector('#course-details');
+    dialog.close();
+}
