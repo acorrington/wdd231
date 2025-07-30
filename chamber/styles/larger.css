@@ -94,7 +94,7 @@
     #join-section {
         display: flex;
         flex-direction: row;
-        align-items: start;
+        align-items: stretch;
         gap: 1rem;
         margin: 1rem;
     }
