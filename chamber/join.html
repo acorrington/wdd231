@@ -8,7 +8,7 @@
     <meta name="description"
         content="This is the home page for the Chamber of Commerce Directory. It includes links to local businesses and services.">
     <meta name="author" content="Aaron Corrington">
-    
+
     <meta property="og:title" content="Chamber of Commerce Directory">
     <meta property="og:description"
         content="This is the home page for the Chamber of Commerce Directory. It includes links to local businesses and services.">
@@ -27,13 +27,14 @@
     <link rel="icon" href="../favicon.ico">
 
     <script src="scripts/main.js" defer></script>
+    <script src="scripts/join.js" defer></script>
     <script src="scripts/footer-dates.js" defer></script>
 </head>
 
 <body>
     <header>
-        <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="512" height="512"
-            fill="currentColor" stroke="currentColor" class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="512"
+            height="512" fill="currentColor" stroke="currentColor" class="logo">
             <path
                 d="m20.556,15h2.384l-3.958-6h2.154l-4.654-7.897-.076-.112c-.497-.63-1.266-.991-2.107-.991s-1.612.362-2.108.992l-3.549,6.008h-2.181L10.473.08c-.216-.053-.443-.08-.675-.08-.843,0-1.611.362-2.108.992L2.959,9h2.155l-3.958,6h2.383L.063,21h2.314l3.475-6h2.188l-3.475,6h3.964v3h2v-3h3v3h2v-3h8.505l-3.478-6Zm-13.581-2h-2.104l2.638-4h2.104l-2.638,4Z" />
         </svg>
@@ -51,6 +52,135 @@
     <main>
         <section>
             <h1 class="page-title">Join</h1>
+        </section>
+        <section class="intro">
+            <h2>Become a Member of the Roseburg Chamber of Commerce</h2>
+            <p>Join the Roseburg Chamber of Commerce to connect with local businesses, access resources, and grow your organization. Fill out the membership application form below to get started.</p>
+            <hr>
+        </section>
+        <section id="join-section">
+            <form id="join-form" action="#" method="post">
+                <fieldset>
+                    <legend>Membership Application</legend>
+                    <p>Thank you for your interest in joining the Roseburg Chamber of Commerce! Please fill out the
+                        application form below.</p>
+
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="firstname" name="firstname" autocomplete="given-name" required>
+
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" id="lastname" name="lastname" autocomplete="family-name" required>
+
+                    <label for="org-title">Organizational Title:</label>
+                    <input type="text" id="org-title" name="org-title" autocomplete="organization-title" required
+                        pattern="^[A-Za-z\- ]{7,}$" title="Please enter at least 7 letters, hyphens, or spaces.">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" autocomplete="email" placeholder="email@example.com"
+                        required>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+
+                    <label for="org-name">Organization Name:</label>
+                    <input type="text" id="org-name" name="org-name" autocomplete="organization" required>
+
+                    <label for="membership-level">Membership Level:</label>
+                    <div id="membership-level" class="membership-level-options" required>
+                        <label>
+                            <input type="radio" name="membership-level" value="non-profit" required>
+                            Non Profit
+                        </label>
+                        <label>
+                            <input type="radio" name="membership-level" value="bronze">
+                            Bronze
+                        </label>
+                        <label>
+                            <input type="radio" name="membership-level" value="silver">
+                            Silver
+                        </label>
+                        <label>
+                            <input type="radio" name="membership-level" value="gold">
+                            Gold
+                        </label>
+                    </div>
+
+                    <label for="org-description">Organization Description:</label>
+                    <textarea id="org-description" name="org-description" rows="4"></textarea>
+
+                    <input type="hidden" name="timestamp" id="timestamp" value="">
+                    <button type="submit">Apply Now</button>
+                </fieldset>
+            </form>
+
+            <div class="membership-cards-container">
+                <h2>Choose the membership level that best suits your organization:</h2>
+                <div class="membership-card non-profit animate-card">
+                    <h2>Non Profit</h2>
+                    <p>Perfect for non-profit organizations looking to connect and grow.</p>
+                    <button type="button" class="info-btn" data-modal="modal-nonprofit">View Benefits</button>
+                </div>
+                <div class="membership-card bronze animate-card">
+                    <h2>Bronze</h2>
+                    <p>Entry-level membership for small businesses and startups.</p>
+                    <button type="button" class="info-btn" data-modal="modal-bronze">View Benefits</button>
+                </div>
+                <div class="membership-card silver animate-card">
+                    <h2>Silver</h2>
+                    <p>Enhanced benefits for growing businesses seeking more exposure.</p>
+                    <button type="button" class="info-btn" data-modal="modal-silver">View Benefits</button>
+                </div>
+                <div class="membership-card gold animate-card">
+                    <h2>Gold</h2>
+                    <p>Premium membership with maximum benefits and visibility.</p>
+                    <button type="button" class="info-btn" data-modal="modal-gold">View Benefits</button>
+                </div>
+            </div>
+
+            <!-- Modals -->
+            <dialog id="modal-nonprofit" aria-hidden="true">
+                <h3>Non Profit Membership Benefits</h3>
+                <ul>
+                    <li>$0 annual membership fee</li>
+                    <li>Access to networking events</li>
+                    <li>Training workshops</li>
+                    <li>Listing in the Chamber directory</li>
+                </ul>
+                <button class="close-btn">Close</button>
+            </dialog>
+            <dialog id="modal-bronze" aria-hidden="true">
+                <h3>Bronze Membership Benefits</h3>
+                <ul>
+                    <li>$500 annual membership fee</li>
+                    <li>All Non Profit benefits</li>
+                    <li>Business spotlight in newsletter (1x/year)</li>
+                    <li>Event discounts</li>
+                    <li>Ribbon cutting ceremony</li>
+                </ul>
+                <button class="close-btn">Close</button>
+            </dialog>
+            <dialog id="modal-silver" aria-hidden="true">
+                <h3>Silver Membership Benefits</h3>
+                <ul>
+                    <li>$1000 annual membership fee</li>
+                    <li>All Bronze benefits</li>
+                    <li>Featured listing on home page</li>
+                    <li>Priority event registration</li>
+                    <li>Free training sessions</li>
+                </ul>
+                <button class="close-btn">Close</button>
+            </dialog>
+            <dialog id="modal-gold" aria-hidden="true">
+                <h3>Gold Membership Benefits</h3>
+                <ul>
+                    <li>$1500 annual membership fee</li>
+                    <li>All Silver benefits</li>
+                    <li>Premium advertising placement</li>
+                    <li>Exclusive networking events</li>
+                    <li>Personalized business consulting</li>
+                </ul>
+                <button class="close-btn">Close</button>
+            </dialog>
         </section>
     </main>
     <footer>

@@ -127,7 +127,7 @@ function displayCourseDetails(course) {
         <h2>${course.subject} ${course.number}: ${course.title}</h2>
         <p><strong>Credits:</strong> ${course.credits}</p>
         <p><strong>Description:</strong> ${course.description}</p>
-        <p><strong>Certificate</strong>: ${course.certificate}</p>
+         <p><strong>Certificate</strong>: ${course.certificate}</p>
         <p><strong>Technology:</strong> ${course.technology.join(', ')}</p>
         <button onclick="closeDialog()">Close</button>
     `;

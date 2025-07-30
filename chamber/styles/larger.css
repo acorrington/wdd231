@@ -89,4 +89,19 @@
         font-size: 1.1rem;
         padding: 1rem 2rem;
     }
+
+    /* Join Section */
+    #join-section {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        gap: 1rem;
+        margin: 1rem;
+    }
+
+    #join-section .membership-cards-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+    }
 }
