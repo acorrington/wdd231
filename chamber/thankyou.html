@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roseburg Chamber of Commerce Thank You</title>
+    <meta name="description" content="This is the thank you page for the Chamber of Commerce Directory.">
+    <meta name="author" content="Aaron Corrington">
+
+    <meta property="og:title" content="Chamber of Commerce Thank You">
+    <meta property="og:description" content="This is the thank you page for the Chamber of Commerce.">
+    <meta property="og:url" content="https://acorrington.github.io/wdd231/chamber/thankyou.html">
+    <meta property="og:image" content="https://acorrington.github.io/wdd231/images/chamber/chamber-social.jpg" />
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="315">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="../favicon.ico">
+
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+    <script src="scripts/footer-dates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="512"
+            height="512" fill="currentColor" stroke="currentColor" class="logo">
+            <path
+                d="m20.556,15h2.384l-3.958-6h2.154l-4.654-7.897-.076-.112c-.497-.63-1.266-.991-2.107-.991s-1.612.362-2.108.992l-3.549,6.008h-2.181L10.473.08c-.216-.053-.443-.08-.675-.08-.843,0-1.611.362-2.108.992L2.959,9h2.155l-3.958,6h2.383L.063,21h2.314l3.475-6h2.188l-3.475,6h3.964v3h2v-3h3v3h2v-3h8.505l-3.478-6Zm-13.581-2h-2.104l2.638-4h2.104l-2.638,4Z" />
+        </svg>
+        <span>Roseburg Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger" aria-label="Toggle Navigation"></button>
+    </header>
+    <nav id="main-nav" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li class="active"><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h1 class="page-title">Thank You</h1>
+        </section>
+        <section class="confirmation-section">
+            <div class="confirmation">
+                <h2>Application Submitted</h2>
+                <p>Thank you for your submission. Below is the information you provided:</p>
+                <dl id="form-data">
+                    <dt>First Name:</dt>
+                    <dd id="first-name"></dd>
+                    <dt>Last Name:</dt>
+                    <dd id="last-name"></dd>
+                    <dt>Email:</dt>
+                    <dd id="email"></dd>
+                    <dt>Mobile Number:</dt>
+                    <dd id="mobile"></dd>
+                    <dt>Business Name:</dt>
+                    <dd id="business"></dd>
+                    <dt>Submission Date:</dt>
+                    <dd id="timestamp"></dd>
+                </dl>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p><strong>Roseburg Chamber of Commerce</strong></p>
+            <p>123 Main Street</p>
+            <p>Roseburg, OR 97470</p>
+            <p>Email: <a href="mailto:info@roseburgchamber.com">info@roseburgchamber.com</a></p>
+            <p>Phone: (541) 555-1234</p>
+        </div>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/acorrington/" target="_blank"><img src="images/linkedin.svg"
+                    alt="Linked In" width="16" height="16"></a>
+            <a href="https://github.com/acorrington/" target="_blank"><img src="images/github.svg" alt="github"
+                    width="16" height="16"></a>
+            <a href="https://x.com/aaroncorrington/" target="_blank"><img src="images/twitter-x.svg" alt="Twitter"
+                    width="16" height="16"></a>
+        </div>
+        <div>
+            <p>WDD 231 Class Project</p>
+            <p>Aaron Corrington</p>
+            <p>&copy; <span id="current-year"></span> Roseburg Chamber of Commerce</p>
+            <p>Last modification: <span id="last-updated"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

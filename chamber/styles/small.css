@@ -524,24 +524,40 @@ main section .hero-image {
     border-radius: 6px;
 }
 
-#join-section .membership-card.non-profit {
-    background-color: #e0f7fa;
+#join-section .membership-card {
     opacity: 0.5;
+}
+
+#join-section .membership-card.non-profit {
+    background-color: #C8E6C9;
+}
+
+#join-section .membership-card.non-profit h2 {
+    color: var(--primary-color)
 }
 
 #join-section .membership-card.bronze {
-    background-color: #d3a678;
-    opacity: 0.5;
+    background-color: #F0EBE6;
+}
+
+#join-section .membership-card.bronze h2 {
+    color: #6A3805
 }
 
 #join-section .membership-card.silver {
-    background-color: #c0c0c0;
-    opacity: 0.5;
+    background-color: #D8D8D6;
+}
+
+#join-section .membership-card.silver h2 {
+    color: #71706C
 }
 
 #join-section .membership-card.gold {
-    background-color: #ffd700;
-    opacity: 0.5;
+    background-color: #F7F4E6;
+}
+
+#join-section .membership-card.gold h2 {
+    color: #AF9500;
 }
 
 #join-section .membership-card h2 {
@@ -563,7 +579,7 @@ main section .hero-image {
     margin: 1rem auto 0 auto;
 }
 
-#join-section form{
+#join-section form {
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
@@ -595,7 +611,7 @@ main section .hero-image {
 #join-section form select,
 #join-section form textarea,
 #join-section form input[type="number"] {
-    background-color: #eee;
+    background-color: #fff;
     display: block;
     border: solid 1px #999;
     border-radius: 6px;
@@ -692,4 +708,46 @@ dialog button {
         opacity: 1;
         transform: translateY(0) scale(1);
     }
+}
+
+/* Confirmation Styles */
+.confirmation-section {
+    margin: 1rem;
+}
+
+.confirmation {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+    border: solid 1px var(--secondary-color);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.confirmation h2 {
+    font-size: 1.25rem;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    margin: 0 0 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.confirmation dl {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    margin: 0;
+}
+
+.confirmation dt {
+    font-weight: bold;
+    color: #2E7D32;
+}
+
+.confirmation dd {
+    margin: 0;
 }

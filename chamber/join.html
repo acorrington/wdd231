@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roseburg Chamber of Commerce Join</title>
     <meta name="description"
-        content="This is the home page for the Chamber of Commerce Directory. It includes links to local businesses and services.">
+        content="Join the Roseburg Chamber of Commerce to connect with local businesses and grow your organization.">
     <meta name="author" content="Aaron Corrington">
 
-    <meta property="og:title" content="Chamber of Commerce Directory">
+    <meta property="og:title" content="Chamber of Commerce Join">
     <meta property="og:description"
-        content="This is the home page for the Chamber of Commerce Directory. It includes links to local businesses and services.">
+        content="Join the Roseburg Chamber of Commerce to connect with local businesses and grow your organization.">
     <meta property="og:url" content="https://acorrington.github.io/wdd231/chamber/directory.html">
     <meta property="og:image" content="https://acorrington.github.io/wdd231/images/chamber/chamber-social.jpg" />
     <meta property="og:image:width" content="600">
@@ -55,11 +55,12 @@
         </section>
         <section class="intro">
             <h2>Become a Member of the Roseburg Chamber of Commerce</h2>
-            <p>Join the Roseburg Chamber of Commerce to connect with local businesses, access resources, and grow your organization. Fill out the membership application form below to get started.</p>
+            <p>Join the Roseburg Chamber of Commerce to connect with local businesses, access resources, and grow your
+                organization. Fill out the membership application form below to get started.</p>
             <hr>
         </section>
         <section id="join-section">
-            <form id="join-form" action="#" method="post">
+            <form id="join-form" action="thankyou.html" method="get">
                 <fieldset>
                     <legend>Membership Application</legend>
                     <p>Thank you for your interest in joining the Roseburg Chamber of Commerce! Please fill out the
@@ -116,22 +117,72 @@
             <div class="membership-cards-container">
                 <h2>Choose the membership level that best suits your organization:</h2>
                 <div class="membership-card non-profit animate-card">
-                    <h2>Non Profit</h2>
+                    <h2>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-heart-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                        </svg>
+                        <!-- <img src="images/non-profit-icon.svg" alt="Non Profit" width="16" height="16"> -->
+                        Non Profit
+                    </h2>
                     <p>Perfect for non-profit organizations looking to connect and grow.</p>
                     <button type="button" class="info-btn" data-modal="modal-nonprofit">View Benefits</button>
                 </div>
                 <div class="membership-card bronze animate-card">
-                    <h2>Bronze</h2>
+                    <h2>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-award-fill" viewBox="0 0 16 16">
+                            <path
+                                d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864z" />
+                            <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z" />
+                        </svg>
+                        Bronze
+                    </h2>
                     <p>Entry-level membership for small businesses and startups.</p>
                     <button type="button" class="info-btn" data-modal="modal-bronze">View Benefits</button>
                 </div>
                 <div class="membership-card silver animate-card">
-                    <h2>Silver</h2>
+                    <h2>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-award-fill" viewBox="0 0 16 16">
+                            <path
+                                d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864z" />
+                            <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-award-fill"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864z" />
+                            <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z" />
+                        </svg>
+                        Silver
+                    </h2>
                     <p>Enhanced benefits for growing businesses seeking more exposure.</p>
                     <button type="button" class="info-btn" data-modal="modal-silver">View Benefits</button>
                 </div>
                 <div class="membership-card gold animate-card">
-                    <h2>Gold</h2>
+                    <h2>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-award-fill" viewBox="0 0 16 16">
+                            <path
+                                d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864z" />
+                            <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-award-fill"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864z" />
+                            <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-award-fill"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864z" />
+                            <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z" />
+                        </svg>
+                        Gold
+                    </h2>
                     <p>Premium membership with maximum benefits and visibility.</p>
                     <button type="button" class="info-btn" data-modal="modal-gold">View Benefits</button>
                 </div>
