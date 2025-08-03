@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roseburg Volunteer Network - Desktop Wireframe (768px+)</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333333;
+            background-color: #FFFFFF;
+            margin: 0;
+            padding: 20px;
+            width: 768px;
+            margin: 0 auto;
+            border: 2px dashed #333333;
+            /* Sketch-like border */
+        }
+
+        header {
+            background-color: #1B5E20;
+            color: #FFFFFF;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+            border: 1px solid #333333;
+        }
+
+        .nav-bar {
+            display: flex;
+            gap: 20px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+        }
+
+        .nav-bar a {
+            color: #4FC3F7;
+            border: 1px dashed #333333;
+            padding: 5px;
+        }
+
+        .logo {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            border: 1px dashed #333333;
+            padding: 5px;
+            margin: 0 auto;
+        }
+
+        .hero {
+            text-align: center;
+            border: 1px solid #333333;
+            padding: 20px;
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 200px;
+            background-color: #ccc;
+            border: 1px dashed #333333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border: 1px dashed #333333;
+        }
+
+        h1 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #1B5E20;
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .cta-button {
+            background-color: #4FC3F7;
+            color: #333333;
+            padding: 10px;
+            display: inline-block;
+            border: 1px solid #333333;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .featured-event,
+        .weather {
+            border: 1px solid #333333;
+            padding: 15px;
+        }
+
+        .event-image {
+            width: 100%;
+            height: 100px;
+            background-color: #ccc;
+            border: 1px dashed #333333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        h2 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #1B5E20;
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        p {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            color: #333333;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        footer {
+            background-color: #1B5E20;
+            color: #FFFFFF;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #333333;
+        }
+
+        footer a {
+            color: #4FC3F7;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">[Logo: Roseburg Volunteer Network]</div>
+        <nav class="nav-bar">
+            <a href="#">[Home]</a>
+            <a href="#">[Opportunities]</a>
+            <a href="#">[Join Us]</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-image">[Hero Image: Volunteers]</div>
+            <div class="hero-content">
+                <h1>[Join Roseburg Volunteers!]</h1>
+                <a href="#" class="cta-button">[Explore Opportunities]</a>
+            </div>
+        </section>
+        <div class="content">
+            <section class="featured-event">
+                <h2>[Featured Event]</h2>
+                <div class="event-image">[Event Image]</div>
+                <p>[Event Title]</p>
+                <p>[Date]</p>
+                <p>[Location]</p>
+            </section>
+            <section class="weather">
+                <h2>[Weather Widget]</h2>
+                <p>[Current Temp]</p>
+                <p>[Condition]</p>
+                <p>[Forecast Day 1]</p>
+                <p>[Forecast Day 2]</p>
+                <p>[Forecast Day 3]</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <a href="#">[Opportunities]</a>
+        <a href="#">[Join Us]</a>
+        <a href="#">[Attributions]</a>
+        <a href="#">[Video Demo]</a>
+    </footer>
+</body>
+
+</html>
