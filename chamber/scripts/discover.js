@@ -12,7 +12,7 @@ function createCard(item) {
         <img src="images/discover/${item.image}" class="discover" alt="${item.name}" loading="lazy">
         <p>${item.description}</p>
         <p>${item.address}</p>
-        <p><a href="${item.website}" target="_blank">Visit Website</a></p>
+        <p><a href="${item.website}" class="button" target="_blank">Learn More</a></p>
     `;
     return card;
 }
