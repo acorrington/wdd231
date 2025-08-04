@@ -42,8 +42,8 @@ getData().then(data => {
         card.classList.add("card");
         card.innerHTML = `
             <h2>${member.name}</h2>
-            <p class="tagline">${member.tagline}</p>
             <img src="images/members/${member.image}" alt="${member.name}" class="member-image">
+            <p class="tagline">${member.tagline}</p>
             <p>${member.address}</p>
             <p>${member.phone}</p>
             <p><a href="${member.website}" target="_blank">${member.website}</a></p>

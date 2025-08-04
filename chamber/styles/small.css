@@ -48,6 +48,7 @@ header span {
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--primary-color);
+    text-align: center;
 }
 
 /* Hamburger styles */
@@ -247,7 +248,7 @@ section .directory-links img {
     height: auto;
     border-radius: 4px;
     object-fit: contain;
-    width: 200px;
+    width: 100%;
     padding-bottom: 1rem;
     display: block;
     margin: 0 auto;
@@ -269,6 +270,10 @@ section .directory-links img {
 
 .card p a:hover {
     text-decoration: underline;
+}
+
+.card p:last-child {
+    margin-bottom: 1rem;
 }
 
 /* Directory Section */

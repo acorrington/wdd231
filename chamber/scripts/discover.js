@@ -9,9 +9,9 @@ function createCard(item) {
     card.classList.add('card');
     card.innerHTML = `
         <h2>${item.name}</h2>
-        <div><img src="images/discover/${item.image}" alt="${item.name}" loading="lazy"></div>
-        <p>${item.address}</p>
+        <img src="images/discover/${item.image}" class="discover" alt="${item.name}" loading="lazy">
         <p>${item.description}</p>
+        <p>${item.address}</p>
         <p><a href="${item.website}" target="_blank">Visit Website</a></p>
     `;
     return card;

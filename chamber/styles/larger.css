@@ -13,6 +13,10 @@
         padding: 5px 0 5px 0;
     }
 
+    header span {
+        text-align: left;
+    }
+
     .hamburger {
         display: none;
     }
@@ -144,6 +148,10 @@
 }
 
 @media only screen and (min-width: 40rem) and (max-width: 58rem) {
+    header span {
+        text-align: left;
+    }
+
     .grid-container {
         grid-template-areas:
             "sidebar sidebar"
