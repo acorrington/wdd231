@@ -24,42 +24,8 @@ function displayDiscoverData(data) {
         cardArea.appendChild(card);
     });
 
-    // Grid layout based on screen size
-    const gridContainer = document.querySelector('.grid-container');
-    function updateGridLayout() {
-        const width = window.innerWidth;
-        if (width <= 640) {
-            gridContainer.style.gridTemplateAreas = `
-                "sidebar"
-                "cards"
-            `;
-            gridContainer.style.gridTemplateColumns = "1fr";
-        } else if (width <= 1024) {
-            gridContainer.style.gridTemplateAreas = `
-                "sidebar sidebar"
-                "cards cards"
-            `;
-            gridContainer.style.gridTemplateColumns = "1fr 1fr";
-        } else {
-            gridContainer.style.gridTemplateAreas = `
-                "sidebar cards"
-                "sidebar cards"
-            `;
-            gridContainer.style.gridTemplateColumns = "1fr 3fr";
-        }
-    }
-    updateGridLayout();
-    window.addEventListener('resize', updateGridLayout);
-
-    // Sidebar content
-    const visitMessage = document.querySelector('#visit-message');
-    visitMessage.innerHTML = `
-        <h3>Welcome to Roseburg</h3>
-        <p>Discover the charm of Roseburg, OR, nestled in the Umpqua Valley with its scenic beauty, rich history, and thriving community. Known for its wine production, outdoor recreation, and friendly atmosphere, Roseburg offers something for everyone.</p>
-        <p>Explore local attractions, connect with businesses, and consider joining the Chamber to be part of our growth. Contact us for more information!</p>
-    `;
-
     // Last visit message
+    const visitMessage = document.querySelector('#visit-message');
     let lastVisit = localStorage.getItem('lastVisit');
     const now = Date.now();
     let visitText = '';

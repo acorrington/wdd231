@@ -111,12 +111,47 @@
     }
 
     /* Discover Section */
+    .grid-container {
+        grid-template-areas:
+            "sidebar cards"
+            "sidebar cards";
+        grid-template-columns: 1fr 3fr;
+    }
+
+    .discover-section .card-area {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
     .discover-section .card img:hover {
         filter: brightness(125%);
         transition: filter 0.3s ease;
     }
 
-    .sidebar {
-        margin: 0 0 1rem 0;
+    .discover-section .sidebar {
+        padding: 1.5rem;
+    }
+
+    .discover-section .sidebar h3 {
+        font-size: 1.25rem;
+        color: #355E3B;
+        margin-top: 0;
+    }
+
+    .discover-section .sidebar p {
+        margin: 0.5rem 0;
+        line-height: 1.4;
+    }
+}
+
+@media only screen and (min-width: 40rem) and (max-width: 58rem) {
+    .grid-container {
+        grid-template-areas:
+            "sidebar sidebar"
+            "cards cards";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .discover-section .card-area {
+        grid-template-columns: 1fr 1fr;
     }
 }
