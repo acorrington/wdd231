@@ -28,25 +28,11 @@
         "website": "https://wildlifesafari.net"
     },
     {
-        "name": "Roseburg Veterans Memorial",
-        "address": "101 NW Douglas Blvd, Roseburg, OR 97470",
-        "description": "A tribute to local veterans with a serene park and historical plaques.",
-        "image": "veterans-memorial.webp",
-        "website": "https://www.cem.va.gov/cems/nchp/Roseburg.asp"
-    },
-    {
         "name": "North Umpqua Trail",
         "address": "North Umpqua Trail, OR 97470",
         "description": "A scenic hiking trail offering breathtaking views of the North Umpqua River and surrounding forests.",
         "image": "north-umpqua-trail.webp",
         "website": "https://www.blm.gov/visit/north-umpqua-wild-and-scenic-river"
-    },
-    {
-        "name": "Douglas County Courthouse",
-        "address": "1036 SE Douglas Ave, Roseburg, OR 97470",
-        "description": "A historic courthouse with beautiful architecture and public tours available.",
-        "image": "douglas-courthouse.webp",
-        "website": "https://www.douglascountyor.gov/545/County-Counsel"
     },
     {
         "name": "North Umpqua River",
