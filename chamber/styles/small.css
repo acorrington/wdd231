@@ -257,10 +257,20 @@ section .directory-links img {
     font-size: 0.9rem;
     line-height: 1.4;
     color: var(--font-color);
-    margin: 0.25rem 0;
+    margin: 0.25rem;
     text-align: center;
     font-weight: bold;
 }
+
+.card p a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.card p a:hover {
+    text-decoration: underline;
+}
+
 
 /* Directory Section */
 #directory-section {
@@ -495,7 +505,7 @@ main section .hero-image {
 }
 
 /* Join Section */
-section.membership h2{
+section.membership h2 {
     text-align: center;
     margin: 1rem 0;
     padding: 0 1rem;
@@ -757,4 +767,29 @@ dialog button {
 
 .confirmation dd {
     margin: 0;
+}
+
+/* Discover Section */
+.discover-section .card-area {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.grid-container {
+    display: grid;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background: #C8E6C9;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.card-area {
+    grid-area: cards;
+    padding: 0 1rem 1rem 1rem;
 }

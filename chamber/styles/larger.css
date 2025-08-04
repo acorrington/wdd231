@@ -106,7 +106,17 @@
     }
 
     /* Confirmation Styles */
-        .confirmation  {
-            margin: 1rem auto;
-        }
+    .confirmation {
+        margin: 1rem auto;
+    }
+
+    /* Discover Section */
+    .discover-section .card img:hover {
+        filter: brightness(125%);
+        transition: filter 0.3s ease;
+    }
+
+    .sidebar {
+        margin: 0 0 1rem 0;
+    }
 }

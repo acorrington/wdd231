@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Douglas County Museum",
+        "address": "123 Museum Dr, Roseburg, OR 97470",
+        "description": "Explore the rich history of Douglas County with exhibits on pioneer life and local industries.",
+        "image": "douglas-museum.webp",
+        "website": "https://umpquavalleymuseums.org/visit/douglas-county-museum/"
+    },
+    {
+        "name": "Stewart Park",
+        "address": "1500 Stewart Park Dr, Roseburg, OR 97471",
+        "description": "A family-friendly park with playgrounds, picnic areas, and walking trails along the river.",
+        "image": "stewart-park.webp",
+        "website": "https://www.cityofroseburg.org/departments/parks-and-recreation/parks"
+    },
+    {
+        "name": "Umpqua River Lighthouse",
+        "address": "1020 Lighthouse Rd, Reedsport, OR 97467",
+        "description": "Historic lighthouse offering stunning views and insights into maritime history, near Roseburg.",
+        "image": "umpqua-lighthouse.webp",
+        "website": "https://umpquavalleymuseums.org/visit/umpqua-lighthouse-museum/"
+    },
+    {
+        "name": "Wildlife Safari",
+        "address": "1790 Safari Rd, Winston, OR 97496",
+        "description": "Drive-through safari featuring exotic animals and educational programs for all ages.",
+        "image": "wildlife-safari.webp",
+        "website": "https://wildlifesafari.net"
+    },
+    {
+        "name": "Roseburg Veterans Memorial",
+        "address": "101 NW Douglas Blvd, Roseburg, OR 97470",
+        "description": "A tribute to local veterans with a serene park and historical plaques.",
+        "image": "veterans-memorial.webp",
+        "website": "https://www.cem.va.gov/cems/nchp/Roseburg.asp"
+    },
+    {
+        "name": "North Umpqua Trail",
+        "address": "North Umpqua Trail, OR 97470",
+        "description": "A scenic hiking trail offering breathtaking views of the North Umpqua River and surrounding forests.",
+        "image": "north-umpqua-trail.webp",
+        "website": "https://www.blm.gov/visit/north-umpqua-wild-and-scenic-river"
+    },
+    {
+        "name": "Douglas County Courthouse",
+        "address": "1036 SE Douglas Ave, Roseburg, OR 97470",
+        "description": "A historic courthouse with beautiful architecture and public tours available.",
+        "image": "douglas-courthouse.webp",
+        "website": "https://www.douglascountyor.gov/545/County-Counsel"
+    },
+    {
+        "name": "North Umpqua River",
+        "address": "North Umpqua River, OR 97470",
+        "description": "A scenic river known for fishing, rafting, and beautiful natural landscapes.",
+        "image": "north-umpqua-river.webp",
+        "website": "https://rivers.gov/rivers/river/north-umpqua"
+    },
+    {
+        "name": "Douglas County Fairgrounds",
+        "address": "2110 SW Frear St, Roseburg, OR 97471",
+        "description": "Host to the annual Douglas County Fair and various community events throughout the year.",
+        "image": "douglas-fairgrounds.webp",
+        "website": "https://douglasfairgrounds.com/index.html"
+    },
+    {
+        "name": "Crater Lake National Park",
+        "address": "Crater Lake National Park, OR 97604",
+        "description": "A stunning national park known for its deep blue lake and scenic hiking trails.",
+        "image": "crater-lake.webp",
+        "website": "https://www.nps.gov/crla/index.htm"
+    }
+]
