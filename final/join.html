@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sign up to volunteer with the Roseburg Volunteer Network in Roseburg, OR.">
+    <meta name="author" content="[Your Name]">
+    <meta property="og:title" content="Roseburg Volunteer Network - Join Us">
+    <meta property="og:image" content="images/hero.jpg">
+    <title>Roseburg Volunteer Network - Join Us</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans&display=swap">
+    <script type="module" src="scripts/main.js" defer></script>
+    <script type="module" src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="512"
+            height="512" fill="currentColor" stroke="currentColor" class="logo">
+            <path
+                d="m20.556,15h2.384l-3.958-6h2.154l-4.654-7.897-.076-.112c-.497-.63-1.266-.991-2.107-.991s-1.612.362-2.108.992l-3.549,6.008h-2.181L10.473.08c-.216-.053-.443-.08-.675-.08-.843,0-1.611.362-2.108.992L2.959,9h2.155l-3.958,6h2.383L.063,21h2.314l3.475-6h2.188l-3.475,6h3.964v3h2v-3h3v3h2v-3h8.505l-3.478-6Zm-13.581-2h-2.104l2.638-4h2.104l-2.638,4Z" />
+        </svg>
+        <span class="logo-title">Roseburg Volunteer Network</span>
+        <button class="hamburger" aria-label="Toggle menu">☰</button>
+        <nav class="nav-links" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="opportunities.html">Opportunities</a></li>
+                <li class="active"><a href="join.html">Join Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" role="banner">
+            <img src="images/hero-join.webp" alt="Joining Volunteers" loading="lazy">
+            <div class="hero-content">
+                <h1>Join Our Community</h1>
+                <a href="opportunities.html" class="cta-button">Register Today - Spots Are Limited This Month!</a>
+            </div>
+        </section>
+        <section class="join-section" aria-label="Volunteer sign-up form">
+            <fieldset>
+                <h1>Become a Volunteer!</h1>
+                <p>Join our community to make a difference in Roseburg, OR.</p>
+                <form id="volunteer-form" action="form-action.html" method="get">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required aria-required="true">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+                    <label for="event-type">Preferred Event Type:</label>
+                    <select id="event-type" name="event-type">
+                        <option value="Environmental">Environmental</option>
+                        <option value="Educational">Educational</option>
+                        <option value="Community">Community</option>
+                    </select>
+                    <label for="availability">Availability:</label>
+                    <textarea id="availability" name="availability" required aria-required="true"></textarea>
+                    <button type="submit">Sign Up</button>
+                </form>
+            </fieldset>
+        </section>
+    </main>
+    <footer>
+        <span class="last-visit"></span>
+        <a href="index.html">Home</a>
+        <a href="opportunities.html">Opportunities</a>
+        <a href="join.html">Join Us</a>
+        <a href="about.html">About Us</a>
+        <a href="[YouTube/Loom URL]">Video Demo</a>
+    </footer>
+
+</body>
+
+</html>

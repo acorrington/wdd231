@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Confirmation page for volunteering with Roseburg Volunteer Network.">
+    <meta name="author" content="[Your Name]">
+    <meta property="og:title" content="Roseburg Volunteer Network - Form Confirmation">
+    <meta property="og:image" content="images/hero.jpg">
+    <title>Roseburg Volunteer Network - Form Confirmation</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans&display=swap">
+    <script type="module" src="scripts/main.js" defer></script>
+    <script type="module" src="scripts/form-action.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="512"
+            height="512" fill="currentColor" stroke="currentColor" class="logo">
+            <path
+                d="m20.556,15h2.384l-3.958-6h2.154l-4.654-7.897-.076-.112c-.497-.63-1.266-.991-2.107-.991s-1.612.362-2.108.992l-3.549,6.008h-2.181L10.473.08c-.216-.053-.443-.08-.675-.08-.843,0-1.611.362-2.108.992L2.959,9h2.155l-3.958,6h2.383L.063,21h2.314l3.475-6h2.188l-3.475,6h3.964v3h2v-3h3v3h2v-3h8.505l-3.478-6Zm-13.581-2h-2.104l2.638-4h2.104l-2.638,4Z" />
+        </svg>
+        <span class="logo-title">Roseburg Volunteer Network</span>
+        <button class="hamburger" aria-label="Toggle menu">☰</button>
+        <nav class="nav-links" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="opportunities.html">Opportunities</a></li>
+                <li class="active"><a href="join.html">Join Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" role="banner">
+            <img src="images/hero-thanks.webp" alt="Confirmation of Registration" loading="lazy">
+            <div class="hero-content">
+                <h1>Registration Confirmed</h1>
+                <a href="opportunities.html" class="cta-button">Explore More Opportunities Now!</a>
+            </div>
+        </section>
+        <section class="confirmation-section" aria-label="Volunteer sign-up confirmation">
+            <h1>Thank You for Joining!</h1>
+            <p>Your registration has been received. We'll contact you soon with next steps. Check your email for confirmation.</p>
+            <p>Name: <span id="display-name"></span></p>
+            <p>Email: <span id="display-email"></span></p>
+            <p>Event Type: <span id="display-event-type"></span></p>
+            <p>Availability: <span id="display-availability"></span></p>
+            <a href="join.html" class="cta-button">Back to Join</a>
+        </section>
+    </main>
+    <footer>
+        <span class="last-visit"></span>
+        <a href="index.html">Home</a>
+        <a href="opportunities.html">Opportunities</a>
+        <a href="join.html">Join Us</a>
+        <a href="about.html">About Us</a>
+        <a href="[YouTube/Loom URL]">Video Demo</a>
+    </footer>
+    <script>
+        
+    </script>
+</body>
+
+</html>
