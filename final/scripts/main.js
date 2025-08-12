@@ -33,12 +33,12 @@ async function displayWeather() {
         container.innerHTML = `
       <h4>Current Weather</h4>
       <div class="weather-card">
-      <img src="${getCWeatherIcon(weather.current.condition)}" alt="${weather.current.condition.description}" loading="lazy">
+      <img src="${getWeatherIcon(weather.current.condition)}" alt="${weather.current.condition.description}" loading="lazy">
       <p>${weather.current.temp}°F, ${weather.current.condition.description}</p>
       </div>
       <h4>3-Day Forecast</h4>
       ${weather.forecast.map(day =>
-            `<div class="weather-card"><img src="${getCWeatherIcon(day.condition)}" alt="${day.condition.description}" loading="lazy"><p>${new Date(day.date).toLocaleDateString('en-US', { weekday: 'long' })}: ${day.temp}°F, ${day.condition.description}</p></div>`
+            `<div class="weather-card"><img src="${day.condition.day_icon}" alt="${day.condition.description}" loading="lazy"><p>${new Date(day.date).toLocaleDateString('en-US', { weekday: 'long' })}: ${day.temp}°F, ${day.condition.description}</p></div>`
          ).join('')}
     `;
     } else {
@@ -46,7 +46,7 @@ async function displayWeather() {
     }
 }
 
-function getCWeatherIcon(condition) {
+function getWeatherIcon(condition) {
     // check if its day or night and return the correct weather icon
     const hour = new Date().getHours();
     return hour >= 6 && hour < 18 ? condition.day_icon : condition.night_icon;
@@ -70,3 +70,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
     localStorage.setItem('lastVisit', new Date().toISOString());
 });
+
+const year = document.querySelector("#current-year");
+const today = new Date();
+year.innerHTML = today.getFullYear();
+
+const modified = document.querySelector("#last-updated");
+const lastModified = new Date(document.lastModified);
+modified.innerHTML = lastModified.toDateString();

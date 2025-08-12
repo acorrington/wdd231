@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans&display=swap">
-    <script type="module" src="scripts/main.js" defer></script>
+    <script type="module" src="scripts/main.js"></script>
 </head>
 
 <body>
@@ -47,42 +47,38 @@
         <section class="about-section" aria-label="About the Roseburg Volunteer Network">
             <div class="about-content">
                 <h1>About Us</h1>
-                <p><strong>Mission:</strong> To unite Roseburg, OR, residents in volunteer efforts that strengthen our community and
+                <p><strong>Mission:</strong> To unite Roseburg, OR, residents in volunteer efforts that strengthen our
+                    community and
                     environment.</p>
-                <p><strong>History:</strong> Founded in 2023, we've grown from a small group of local advocates to a network
+                <p><strong>History:</strong> Founded in 2023, we've grown from a small group of local advocates to a
+                    network
                     supporting over 500 volunteers annually.</p>
-            
-            <div class="gallery" role="region">
-                <img src="images/team.webp" alt="Volunteer team at Umpqua River" loading="lazy">
-                <img src="images/event-past.webp" alt="Past event at Fir Grove Park" loading="lazy">
-            </div>
-            <p><strong>Team:</strong> Led by Jane Doe (Coordinator) and John Smith (Outreach Lead).</p>
-            <p>Contact: team@roseburgvolunteers.org</p>
+
+                <div class="gallery" role="region">
+                    <img src="images/team.webp" alt="Volunteer team at Umpqua River" loading="lazy">
+                    <img src="images/event-past.webp" alt="Past event at Fir Grove Park" loading="lazy">
+                </div>
+                <p><strong>Team:</strong> Led by Jane Doe (Coordinator) and John Smith (Outreach Lead).</p>
+                <p>Contact: team@roseburgvolunteers.org</p>
             </div>
         </section>
     </main>
     <footer>
-        <span class="last-visit"></span>
-        <a href="index.html">Home</a>
-        <a href="opportunities.html">Opportunities</a>
-        <a href="join.html">Join Us</a>
-        <a href="about.html">About Us</a>
-        <a href="[YouTube/Loom URL]">Video Demo</a>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="opportunities.html">Opportunities</a>
+            <a href="join.html">Join Us</a>
+            <a href="about.html">About Us</a>
+            <a href="[YouTube/Loom URL]">Video Demo</a>
+        </div>
+        <div>
+            <p class="last-visit"></p>
+            <p>WDD 231 Final Class Project</p>
+            <p>Aaron Corrington</p>
+            <p>&copy; <span id="current-year"></span> Roseburg Volunteer Network</p>
+            <p>Last modification: <span id="last-updated"></span></p>
+        </div>
     </footer>
-    <script>
-        // Local storage for favorite section
-        document.addEventListener('DOMContentLoaded', () => {
-            const savedSection = localStorage.getItem('favoriteAboutSection');
-            if (savedSection) {
-                document.querySelector(`.${savedSection}`).scrollIntoView({ behavior: 'smooth' });
-            }
-            document.querySelectorAll('p, .gallery').forEach(section => {
-                section.addEventListener('click', () => {
-                    localStorage.setItem('favoriteAboutSection', section.className || 'default');
-                });
-            });
-        });
-    </script>
 </body>
 
 </html>
