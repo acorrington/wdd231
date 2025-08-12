@@ -31,12 +31,12 @@ async function displayWeather() {
     const weather = await getWeather();
     if (weather) {
         container.innerHTML = `
-      <h4>Current Weather</h4>
+      <h3>Current Weather</h3>
       <div class="weather-card">
       <img src="${getWeatherIcon(weather.current.condition)}" alt="${weather.current.condition.description}" loading="lazy">
       <p>${weather.current.temp}°F, ${weather.current.condition.description}</p>
       </div>
-      <h4>3-Day Forecast</h4>
+      <h3>3-Day Forecast</h3>
       ${weather.forecast.map(day =>
             `<div class="weather-card"><img src="${day.condition.day_icon}" alt="${day.condition.description}" loading="lazy"><p>${new Date(day.date).toLocaleDateString('en-US', { weekday: 'long' })}: ${day.temp}°F, ${day.condition.description}</p></div>`
          ).join('')}
