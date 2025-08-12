@@ -68,9 +68,6 @@ header div {
     width: 44px;
     height: auto;
     padding: 1rem 0;
-    ;
-    fill: var(--secondary-color);
-    stroke: var(--secondary-color);
 }
 
 .logo-title {

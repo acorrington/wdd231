@@ -7,7 +7,7 @@ export async function getWeather() {
         const response = await fetch(url);
         if (!response.ok) throw new Error('Failed to fetch weather data');
         const data = await response.json();
-        console.log('Weather Data:', data);
+        // console.log('Weather Data:', data);
         const weatherCodeToText = (code) => {
             const codes = {
                 0: { description: "Clear sky", day_icon: "https://openweathermap.org/img/wn/01d@2x.png", night_icon: "https://openweathermap.org/img/wn/01n@2x.png" },
