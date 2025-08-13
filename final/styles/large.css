@@ -23,6 +23,11 @@
     }
 
     .content {
+        display: grid;
+        gap: 20px;
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
         grid-template-columns: 1fr 1fr;
     }
 
@@ -46,9 +51,10 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
-    /* .modal-content {
-        margin: 10% auto;
-    } */
+    .about-section {
+        grid-column-start: span 2;
+        grid-column-end: auto;
+    }
 
     .gallery {
         flex-wrap: wrap;

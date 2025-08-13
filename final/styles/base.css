@@ -187,10 +187,10 @@ p {
 }
 
 .content {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
     padding: 20px;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -212,7 +212,6 @@ p {
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 1.5rem;
-    ;
     color: var(--font-color);
     margin-bottom: 10px;
     text-align: center;
@@ -439,11 +438,6 @@ p {
 .confirmation-section {
     padding: 20px;
     text-align: center;
-}
-
-.about-section {
-    grid-column-start: span 2;
-    grid-column-end: auto;
 }
 
 .about-content {
