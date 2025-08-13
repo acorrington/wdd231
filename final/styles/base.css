@@ -436,10 +436,14 @@ p {
 }
 
 .join-section,
-.confirmation-section,
-.about-section {
+.confirmation-section {
     padding: 20px;
     text-align: center;
+}
+
+.about-section {
+    grid-column-start: span 2;
+    grid-column-end: auto;
 }
 
 .about-content {
@@ -451,6 +455,15 @@ p {
     margin: 0 auto;
     width: 100%;
     max-width: 1200px;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
 }
 
 form {
