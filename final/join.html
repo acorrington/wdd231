@@ -56,24 +56,24 @@
                 <p>Join our community to make a difference in Roseburg, OR.</p>
                 <form id="volunteer-form" action="form-action.html" method="get" autocomplete="on">
                     <label for="name">Name:<span class="required">*</span></label>
-                    <input type="text" id="name" name="name" required aria-required="true" autocomplete="name">
+                    <input type="text" id="name" name="name" required aria-required="true">
                     <label for="email">Email:<span class="required">*</span></label>
                     <input type="email" id="email" name="email" required aria-required="true" autocomplete="email">
-                    <label for="event-type">Preferred Event Type:<span class="required">*</span></label>
+                    <div class="label">Preferred Event Type:<span class="required">*</span></div>
                     <div class="radio-group">
-                        <input type="radio" id="event-environmental" name="event-type" value="Environmental" required autocomplete="off">
+                        <input type="radio" id="event-environmental" name="event-type" value="Environmental" required>
                         <label for="event-environmental">Environmental</label>
                     </div>
                     <div class="radio-group">
-                        <input type="radio" id="event-educational" name="event-type" value="Educational" autocomplete="off">
+                        <input type="radio" id="event-educational" name="event-type" value="Educational">
                         <label for="event-educational">Educational</label>
                     </div>
                     <div class="radio-group">
-                        <input type="radio" id="event-community" name="event-type" value="Community" autocomplete="off">
+                        <input type="radio" id="event-community" name="event-type" value="Community">
                         <label for="event-community">Community</label>
                     </div>
                     <label for="availability">Availability:<span class="required">*</span></label>
-                    <textarea id="availability" name="availability" required aria-required="true" autocomplete="off"></textarea>
+                    <textarea id="availability" name="availability" required aria-required="true"></textarea>
                     <button type="submit">Sign Up</button>
                 </form>
             </fieldset>

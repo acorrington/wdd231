@@ -460,7 +460,7 @@ form {
     margin: 20px auto;
 }
 
-label {
+label, .label {
     margin-top: 10px;
     font-family: var(--font-family);
     font-weight: 400;
